@@ -28,7 +28,7 @@ console.log(whatever);
 // function.
 for (var i=0; i < 3; i++) {
    setTimeout(function() {
-      console.log(i); // displays "3, 3, 3"
+      console.log("var: " + i); // displays "3, 3, 3"
    }, 100);
 }
 
@@ -37,6 +37,51 @@ for (var i=0; i < 3; i++) {
 // This displays "1, 2, 3".
 for (let i=0; i < 3; i++) {
    setTimeout(function() {
-      console.log(i); // displays "1, 2, 3"
+      console.log("let: " + i); // displays "1, 2, 3"
    }, 100);
 }
+
+/*
+** Array Destructuring
+*/
+
+let input = [1, 2];
+let [first, last] = input; // array destructuring
+
+[first, last] = [last, first]; // swap
+
+let [primary, ...rest] = [1, 2, 3, 4, 5, 6];
+console.log("primary: " + primary);
+console.log("reset: " + rest);
+
+let [tip] = [1, 2, 3, 4];
+console.log("tip: " + tip);
+
+let [, second, , fourth] = [41, 42, 43, 44];
+console.log("2nd: " + second + ", 4th: " + fourth);
+
+/*
+** Object Destructuring
+*/
+
+// grab object properties as variables of the same name
+let obj = {
+   a: "HI!",
+   b: 42,
+   c: true
+};
+let { a, b } = obj;
+console.log("a: " + a + ", b: " + b);
+
+// set as variables with a different name
+let { a: foo, b: bar } = obj;
+console.log("a: " + foo + ", b: " + bar);
+
+// get remaining properties as a separate object
+let obj2 = {
+   x: "HI!",
+   y: 42,
+   z: true
+}
+let {x, ...others} = obj2;
+console.log("x: " + x + ", others.y: " + others.y + ", others.z: " + others.z);
