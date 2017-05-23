@@ -2,7 +2,7 @@
 
 This repo provides a quick walk-through of the Typescript language by using source-code examples with comments.
 
-# Dependencies
+## Dependencies
 
 Install the latest Typescript compiler...
 
@@ -10,7 +10,11 @@ Install the latest Typescript compiler...
 $ npm install -g typescript
 ```
 
-# Compile (CLI)
+Install Node.js (any version for this tutorial)...
+
+* https://nodejs.org/en/download/
+
+## Compile (CLI)
 
 You can transpile typescript to javascript using the 'tsc' compiler.
 
@@ -22,7 +26,7 @@ The "tsconfig.json" Typescript config file configures the compiler.
 
 The build output is written to the './build' directory.
 
-# Compile (Visual Studio Code)
+## Compile (Visual Studio Code)
 
 The build command for Visual Studio Code is defined in "./vscode/tasks.json".
 
@@ -33,7 +37,7 @@ To compile with VS Code...
   * "SHIFT-CMD-B" (OSX)
   * https://code.visualstudio.com/docs/getstarted/keybindings#_tasks
 
-# Run
+## Run
 
 Run any compiled example with Node.js...
 
