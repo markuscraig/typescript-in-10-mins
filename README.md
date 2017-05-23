@@ -1,4 +1,4 @@
-# Learn Typescript in 5 Minutes
+# Learn Typescript in 10 Minutes
 
 This repo provides a quick walk-through of the Typescript language by using source-code examples with comments.
 
