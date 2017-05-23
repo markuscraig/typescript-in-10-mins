@@ -29,11 +29,11 @@ var users: User[] = [
 ]
 
 // array of classes
-class Animal {
+class Pet {
    constructor(public name: string) {}
 }
-var pets: Animal[] = [
-   new Animal("Barley"),
-   new Animal("Bailey")
+var pets: Pet[] = [
+   new Pet("Barley"),
+   new Pet("Bailey")
 ];
 console.log(pets);

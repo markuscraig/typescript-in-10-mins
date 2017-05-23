@@ -49,4 +49,4 @@ var Point = (function () {
 new Point().dump(); // x = 0, y = 0
 new Point(42).dump(); // x = 42, y = 0
 new Point(1.1, 2.2).dump(); // x = 1.1, y = 2.2
-//# sourceMappingURL=04_classes.js.map
+//# sourceMappingURL=04_classes_basic.js.map

@@ -18,15 +18,15 @@ var users = [
     { first: "Joe", last: "Blow" },
 ];
 // array of classes
-var Animal = (function () {
-    function Animal(name) {
+var Pet = (function () {
+    function Pet(name) {
         this.name = name;
     }
-    return Animal;
+    return Pet;
 }());
 var pets = [
-    new Animal("Barley"),
-    new Animal("Bailey")
+    new Pet("Barley"),
+    new Pet("Bailey")
 ];
 console.log(pets);
 //# sourceMappingURL=05_collections.js.map
