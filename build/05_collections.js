@@ -29,4 +29,4 @@ var pets = [
     new Animal("Bailey")
 ];
 console.log(pets);
-//# sourceMappingURL=02_collections.js.map
+//# sourceMappingURL=05_collections.js.map
