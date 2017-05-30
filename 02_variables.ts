@@ -65,3 +65,16 @@ let obj2 = {
 }
 let {x, ...others} = obj2;
 console.log("x: " + x + ", others.y: " + others.y + ", others.z: " + others.z);
+
+/*
+** Indexable Types
+*/
+
+interface StringArray {
+   // an 'index signature' that describes the types that
+   // can be used to index into the object
+   [index: number]: string;
+}
+
+let indexedList: StringArray = ["howdy", "hi"];
+console.log("first index = " + indexedList[0] + ", second index = " + indexedList[1]);

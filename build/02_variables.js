@@ -65,5 +65,7 @@ var obj2 = {
 };
 var x = obj2.x, others = __rest(obj2, ["x"]);
 console.log("x: " + x + ", others.y: " + others.y + ", others.z: " + others.z);
+var indexedList = ["howdy", "hi"];
+console.log("first index = " + indexedList[0] + ", second index = " + indexedList[1]);
 var _a;
 //# sourceMappingURL=02_variables.js.map

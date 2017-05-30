@@ -3,6 +3,7 @@
 */
 var p = {
     name: "Mark",
+    magic: 1234,
     hi: function () { console.log("wuzzup"); }
 };
 console.log(p.name);

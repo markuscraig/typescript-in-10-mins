@@ -9,17 +9,22 @@ interface Person {
    // optional properties
    age?: number;
 
+   // read-only properties; only set by constructor
+   readonly magic: number;
+
    // functions
    hi(): void;
 }
 
 var p: Person = {
    name: "Mark",
+   magic: 1234,
    hi: () => { console.log("wuzzup") }
 };
 
 console.log(p.name);
 p.hi();
+//p.magic = 5;  ERROR: CANNOT ASSIGN READONLY MEMBER
 
 /*
 ** Interface as a Function Type
